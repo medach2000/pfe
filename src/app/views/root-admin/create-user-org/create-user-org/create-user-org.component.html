@@ -1,0 +1,41 @@
+<form style="margin-left:10%; margin-right:10%">
+
+    <div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Choose Role</option>
+            <option value="1">User Organization</option>
+        </select>
+    </div>
+    
+    <div style="margin-top: 2%;">
+        <select class="form-select" aria-label="Default select example" >
+            <option selected>Choose Organization</option>
+            <option value="1">Organization A</option>
+            <option value="2">Organization B</option>
+        </select>
+    </div>
+
+    <div class="form-floating mb-3" style="margin-top: 1%;">
+        <label for="floatingInput">Name</label>
+        <input type="text" class="form-control" id="floatingInput" placeholder="name">
+        
+    </div>
+    <div class="form-floating mb-3">
+        <label for="floatingInput">Email address</label>
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        
+    </div>
+    <div class="form-floating">
+        <label for="floatingPassword">Password</label>
+        <input type="password" class="form-control" id="floatingPassword" placeholder="password">
+        
+    </div>
+
+    <div class="form-floating mb-3" style="margin-top: 1%;">
+        <label for="floatingInput">Amount User</label>
+        <input type="number" class="form-control" id="floatingInput" placeholder="amount user $">
+    </div>
+
+    
+    <button class="btn btn-primary" routerLink="/root-admin/users-organization">Create User Organization</button>
+    </form>

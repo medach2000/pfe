@@ -1,0 +1,13 @@
+<form style="margin-left:10%; margin-right:10%">
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="name" name="name" [(ngModel)]="formData.name">
+    </div>
+
+    <div class="mb-3" style="margin-top: 2%" >
+        <label for="formGroupExampleInput2" class="form-label">Balance</label>
+        <input type="number" class="form-control"  placeholder="balance" name="balance" [(ngModel)]="formData.balance">
+    </div>
+    <button class="btn btn-primary" type="button" (click)="update()" style="margin-top: 1%">Update Subscription</button>
+</form>

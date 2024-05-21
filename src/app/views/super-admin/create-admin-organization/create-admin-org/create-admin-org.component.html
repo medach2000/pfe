@@ -1,0 +1,44 @@
+<form style="margin-left:10%; margin-right:10%">
+
+   <!-- <div>
+        <select class="form-select" aria-label="Default select example" required>
+            <option selected>Choose Role</option>
+            <option value="1">Admin Organization</option>
+        </select>
+    </div>
+    
+   <div style="margin-top: 2%;">
+        <select class="form-select" aria-label="Default select example" required>
+            <option selected>Choose Organization</option>
+            <option value="1">Organization A</option>
+            <option value="2">Organization B</option>
+        </select>
+    </div>-->
+
+    
+
+<div class="form-floating mb-3">
+    <label for="floatingInput">Name</label>
+    <input type="text" class="form-control" id="floatingInput" placeholder="Username" required name="name" [(ngModel)]="formData.name">
+    
+</div>
+
+<div class="form-floating mb-3">
+    <label for="floatingInput">Email address</label>
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required name="email" [(ngModel)]="formData.email">
+    
+</div>
+<div class="form-floating">
+    <label for="floatingPassword">Password</label>
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required name="password" [(ngModel)]="formData.password">
+    
+</div>
+
+<div class="form-floating mb-3" style="margin-top: 1%;">
+    <label for="floatingInput">Organization Name</label>
+    <input type="text" class="form-control" id="floatingInput" placeholder="organization name" required name="organization_name" [(ngModel)]="formData.organization_name">
+    
+</div>
+
+<button class="btn btn-primary" (click)="createAdmin()" style="margin-top: 1%;">Create AdminOrganization</button>
+</form>
